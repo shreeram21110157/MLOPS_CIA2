@@ -42,7 +42,7 @@ def home():
             model = pickle.load(f)
         num = np.array(list(cgpa)).reshape(1,1)
         prediction = model.predict(num)
-        msg = 'The package is %d'.format(prediction)
+        msg = 'The package is '+prediction
         flash(msg,category='success')
 
 
