@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>This is the home page</h1>
+<form method="POST">
+    <h3 align="center">Prediction</h3>
+    <div class="form-group">
+      <label for="cgpa">CGPA</label>
+      <input
+        type="number"
+        step="0.1"
+        class="form-control"
+        id="cgpa"
+        name="cgpa"
+        placeholder="Enter CGPA"
+      />
+    </div>
+    
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock %}
